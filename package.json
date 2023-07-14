@@ -1,0 +1,26 @@
+{
+  "name": "canvas-timeline",
+  "version": "0.0.1",
+  "description": "timeline",
+  "main": "canvas-timeline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyleBing/canvas-timeline.git"
+  },
+  "keywords": [
+    "canvas",
+    "js"
+  ],
+  "author": "KyleBing",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/KyleBing/canvas-timeline/issues"
+  },
+  "homepage": "https://github.com/KyleBing/canvas-timeline#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
