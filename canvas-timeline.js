@@ -71,9 +71,9 @@ class CanvasTimeline {
             this.mouseY = event.y
 
             if (event.ctrlKey){
-                this.scrollOffset = this.scrollOffset - 3
+                this.scrollOffset = this.frame.height - this.mouseY
             } else {
-                this.scrollOffset = this.scrollOffset + 3
+                this.scrollOffset = this.frame.height + this.mouseY
             }
 
             // fill background
@@ -153,7 +153,7 @@ class CanvasTimeline {
 
         let centerX = this.baseX
         c.strokeStyle = 'black'
-        c.lineWidth = 10
+        c.lineWidth = 5
         c.beginPath()
         c.moveTo(centerX,0)
         c.lineTo(centerX, this.frame.height)
@@ -202,17 +202,13 @@ class CanvasTimeline {
             c.fillText(diary.content, this.baseX + 200 + 20, positionY + 35)
         }
 
-
         // 日期
         c.font = '23px 微软雅黑'
         c.fillStyle = '#aaa'
         c.fillText( (dateFormatter(new Date(diary.date))),this.baseX - 280, positionY,)
 
-
-
         c.restore()
     }
-
 
     animationStart(){
         if (this.isPlaying){
